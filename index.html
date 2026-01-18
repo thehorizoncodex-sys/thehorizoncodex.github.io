@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Horizon Codex - AI Cinematic Alternative Rock / Ambient Metal</title>
-    <meta name="description" content="The Horizon Codex: Cinematic alternative rock and ambient metal generated with AI. 18 tracks, 33 subscribers, 12.2K views.">
+    <meta name="description" content="The Horizon Codex: Cinematic alternative rock and ambient metal generated with AI. 18 tracks, 33 subscribers, 12.2K views. Goal: 1000 subs by March 2026.">
     <style>
         * { box-sizing: border-box; }
         
@@ -451,6 +451,28 @@
             transform: translateX(10px);
         }
         
+        .band-member-inner {
+            display: flex;
+            gap: 25px;
+            align-items: flex-start;
+        }
+        
+        .band-member-photo {
+            width: 160px;
+            height: 160px;
+            border-radius: 15px;
+            border: 3px solid var(--color-primary);
+            object-fit: cover;
+            flex-shrink: 0;
+            box-shadow: 0 8px 25px rgba(78,205,196,0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .band-member-card:hover .band-member-photo {
+            transform: scale(1.05);
+            box-shadow: 0 12px 35px rgba(78,205,196,0.5);
+        }
+        
         .band-member-card strong {
             color: var(--color-primary);
             font-size: 1.4em;
@@ -598,6 +620,17 @@
                 max-width: 100%;
                 padding: 20px;
                 margin: 15px 0;
+            }
+            
+            .band-member-inner {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .band-member-photo {
+                width: 120px;
+                height: 120px;
+                margin: 0 auto 15px;
             }
             
             .band-member-card strong {
@@ -832,33 +865,58 @@
         <h3 style="text-align: center; color: #4ecdc4; margin-top: 40px; margin-bottom: 40px; font-size: 2.2em;">Who is Who?</h3>
         <div style="max-width: 1000px; margin: 0 auto;">
             <div class="band-member-card">
-                <p><strong>Helix</strong><br>
-                <span class="role">Drums — The Pulse of the Universe</span><br>
-                <span class="description">With precision and power, Helix drives the heartbeat of The Horizon Codex. Every rhythm, every beat is a pulse from the core of the Codex universe.</span></p>
+                <div class="band-member-inner">
+                    <img src="helix.jpg" alt="Helix - The Horizon Codex" class="band-member-photo">
+                    <div>
+                        <p><strong>Helix</strong><br>
+                        <span class="role">Drums — The Pulse of the Universe</span><br>
+                        <span class="description">With precision and power, Helix drives the heartbeat of The Horizon Codex. Every rhythm, every beat is a pulse from the core of the Codex universe.</span></p>
+                    </div>
+                </div>
             </div>
 
             <div class="band-member-card">
-                <p><strong>Laszlo</strong><br>
-                <span class="role">Guitar — Riffs That Forge Empires</span><br>
-                <span class="description">His riffs echo through dimensions. Laszlo weaves heavy metal fury with cinematic beauty, creating the sonic architecture of the Codex.</span></p>
+                <div class="band-member-inner">
+                    <img src="laszlo.jpg" alt="Laszlo - The Horizon Codex" class="band-member-photo">
+                    <div>
+                        <p><strong>Laszlo</strong><br>
+                        <span class="role">Guitar — Riffs That Forge Empires</span><br>
+                        <span class="description">His riffs echo through dimensions. Laszlo weaves heavy metal fury with cinematic beauty, creating the sonic architecture of the Codex.</span></p>
+                    </div>
+                </div>
             </div>
 
             <div class="band-member-card">
-                <p><strong>Iris</strong><br>
-                <span class="role">Vocals (Soprano) — Ethereal Voice Guiding the Horizons</span><br>
-                <span class="description">Her voice rises like dawn breaking over unknown waters. Iris carries the melody of hope, the ethereal whisper that calls us toward the horizon.</span></p>
+                <div class="band-member-inner">
+                    <img src="Iris (1).jpg" alt="Iris - The Horizon Codex" class="band-member-photo">
+                    <div>
+                        <p><strong>Iris</strong><br>
+                        <span class="role">Vocals (Soprano) — Ethereal Voice Guiding the Horizons</span><br>
+                        <span class="description">Her voice rises like dawn breaking over unknown waters. Iris carries the melody of hope, the ethereal whisper that calls us toward the horizon.</span></p>
+                    </div>
+                </div>
             </div>
 
             <div class="band-member-card">
-                <p><strong>Kai</strong><br>
-                <span class="role">Vocals (Baritone) — Raw Power in the Deep</span><br>
-                <span class="description">Deep, powerful, unflinching. Kai's baritone grounds the universe, providing the foundation of strength upon which the Codex stands.</span></p>
+                <div class="band-member-inner">
+                    <img src="kai.jpg" alt="Kai - The Horizon Codex" class="band-member-photo">
+                    <div>
+                        <p><strong>Kai</strong><br>
+                        <span class="role">Vocals (Baritone) — Raw Power in the Deep</span><br>
+                        <span class="description">Deep, powerful, unflinching. Kai's baritone grounds the universe, providing the foundation of strength upon which the Codex stands.</span></p>
+                    </div>
+                </div>
             </div>
 
             <div class="band-member-card">
-                <p><strong>Reyne</strong><br>
-                <span class="role">Bass — Foundation of the Code</span><br>
-                <span class="description">Steady, relentless, the backbone. Reyne's bass lines are the hidden code beneath the surface, the foundation upon which all beauty is built.</span></p>
+                <div class="band-member-inner">
+                    <img src="reyne.jpg" alt="Reyne - The Horizon Codex" class="band-member-photo">
+                    <div>
+                        <p><strong>Reyne</strong><br>
+                        <span class="role">Bass — Foundation of the Code</span><br>
+                        <span class="description">Steady, relentless, the backbone. Reyne's bass lines are the hidden code beneath the surface, the foundation upon which all beauty is built.</span></p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -871,7 +929,7 @@
         </div>
         
         <div class="stats-box">
-            <p><strong>📊 Journey Stats (Jan 11, 2026)</strong><br>
+            <p><strong>📊 Journey Stats (Jan 18, 2026)</strong><br>
             33 Pilgrims | 36.1 Hours Watched | 12.2K Views<br>
             <strong style="color: #4ecdc4;">Goal: 1000 Subscribers by March 2026 🚀</strong></p>
         </div>
